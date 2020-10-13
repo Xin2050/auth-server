@@ -9,7 +9,7 @@ const cors = require('cors');
 
 
 //DB Setup
-mongoose.connect('mongodb://localhost:27017/auth',{useUnifiedTopology:true,useNewUrlParser:true});
+mongoose.connect('mongodb://localhost:27017/chairstore',{useUnifiedTopology:true,useNewUrlParser:true});
 
 
 //App Setup
