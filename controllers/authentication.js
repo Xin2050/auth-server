@@ -14,7 +14,7 @@ function tokenForUser(user) {
 }
 
 function createAuthUser(user){
-    return {id:user.id,name:user.lastName,email:user.email}
+    return {id:user.id,name:user.firstName,email:user.email}
 }
 
 exports.checkEmail = function (req,res,next){
