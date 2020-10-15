@@ -7,4 +7,4 @@
 7 run npm install
 8 npm run dev
 
-then your server will run: http:localhost:3090
+then your server will run: http://localhost:3090
