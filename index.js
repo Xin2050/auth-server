@@ -3,9 +3,10 @@ const http = require('http');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const app = express();
-const router = require('./router');
+const router = require('./routers/router');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const chairStoreRouter = require('./routers/chairstorerouter')
 
 
 //DB Setup
@@ -17,7 +18,7 @@ app.use(morgan('combined'));
 app.use(cors());
 app.use(bodyParser.json({type:'*/*'}));
 router(app);
-
+chairStoreRouter(app);
 
 
 //Server Setup
